@@ -6,3 +6,4 @@ zuul.routes.customer.path=/api/customer/**
 zuul.routes.customer.serviceId=CUSTOMER-SERVICE
 zuul.routes.insurance.path=/api/insurance/**
 zuul.routes.insurance.serviceId=CLAIM-APP
+hystrix.command.CUSTOMER-SERVICE.execution.isolation.thread.timeoutInMilliseconds=5000
