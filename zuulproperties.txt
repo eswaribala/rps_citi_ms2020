@@ -1,0 +1,8 @@
+server.port=8765
+spring.application.name=CITI-API-Server
+eureka.client.fetchRegistry=true
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+zuul.routes.customer.path=/api/customer/**
+zuul.routes.customer.serviceId=CUSTOMER-SERVICE
+zuul.routes.insurance.path=/api/insurance/**
+zuul.routes.insurance.serviceId=CLAIM-APP
